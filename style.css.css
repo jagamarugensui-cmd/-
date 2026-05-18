@@ -1,0 +1,94 @@
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #2c3e50;
+}
+.player-setup {
+    margin: 20px 0;
+    padding: 20px;
+    background: #eef2f5;
+    border-radius: 8px;
+}
+.player-setup input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #e6a23c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #cf9236;
+}
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+.game-controls {
+    margin-bottom: 20px;
+}
+.dice-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.message-box {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: pre-wrap;
+    margin-bottom: 20px;
+}
+.game-board-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+#game-board-img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.player-piece {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+    z-index: 10;
+}
+.player-1 { background-color: #ff4757; }
+.player-2 { background-color: #1e90ff; }
+.player-3 { background-color: #2ed573; }
+.player-4 { background-color: #ffa502; }
